@@ -21,6 +21,7 @@ while True:
 	elif resposta == PASSEAR:
 		# Vai rolar batalha.
 		inimigo = escolher(database)
+		batalha(player,inimigo)
 
 		print("Nome = {0}".format(inimigo["nome"]))
 		print("Poder = {0}".format(inimigo['poder']))
