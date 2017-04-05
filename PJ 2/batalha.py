@@ -3,7 +3,7 @@ VENCEU = 1
 
 def batalha(player, inimigo):
 	while player[vida]>0 and inimigo[vida]>0:
-		Vidainimigo = inimigi[vida] - ( player[poder] - inimigo[defesa])
+		Vidainimigo = inimigo[vida] - ( player[poder] - inimigo[defesa])
 		if Vidainimigo <=0 :
 			return VENCEU # conferir se deve ser retotnado 1 ou venceu
 		Vidaplayer = player[vida] - (inimido[poder] - player[defesa])
