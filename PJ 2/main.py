@@ -16,19 +16,22 @@ player = dados["player"]
 
 while True:
 	resposta = escolha()
+	
 	if resposta == DORMIR:
 		break
 	elif resposta == PASSEAR:
 		# Vai rolar batalha.
 		inimigo = escolher(database)
-		batalha(player,inimigo)
-
+		
 		print("Nome = {0}".format(inimigo["nome"]))
 		print("Poder = {0}".format(inimigo['poder']))
 		print("Vida = {0}".format(inimigo["vida"]))
 		print("Defesa = {0}".format(inimigo["defesa"]))
+		
+		batalha(player,inimigo)
 
-		resultado = batalha(player, inimigo)
+		resultado = batalha(player,inimigo)
+		
 		if resultado == PERDEU:
 			print("perdeu")
 		elif resultado == VENCEU:
