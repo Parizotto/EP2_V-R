@@ -12,3 +12,4 @@ def escolha():
 			return DORMIR
 		else:
 			print("nao existe")
+	
