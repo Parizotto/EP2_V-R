@@ -5,7 +5,7 @@ def escolha():
 	while True:
 		resposta = input("Você deseja passear ou dormir?")
 		if resposta == "passear":
-			print("vamos la")
+			print("vamos la..... \o/")
 			return PASSEAR
 		if resposta == "dormir":
 			print("okay")
