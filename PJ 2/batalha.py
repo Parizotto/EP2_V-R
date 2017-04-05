@@ -4,7 +4,7 @@ VENCEU = 1
 def batalha(player, inimigo):
 	return VENCEU
 	# if (inimigo['poder']) >= (player['poder']):
-	# 	batalha()
+	# 	FAZER A BATALHA
 	# else:
 	# 	resposta= int(input('você quer fugir(1) ou batalhar(2)'))
 	# 	if resposta == 1:
