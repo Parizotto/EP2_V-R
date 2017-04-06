@@ -1,6 +1,6 @@
 PASSEAR = 0
 DORMIR = 1
-import time, sys, json
+import time, sys, json, 
 
 def escolha():
 
