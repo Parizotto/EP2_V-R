@@ -2,22 +2,22 @@ PERDEU = 0
 VENCEU = 1
 
 def batalha(player, inimigo):
-        resposta= int(input("você quer fugir(1) ou batalhar(2)"))
+        
         while True:
-                if resposta == 1:
+                resposta= input("você quer fugir(1) ou batalhar(2): ")
+                if resposta == "fugir" or resposta == "1":
                         if (inimigo["poder"]) <= (player["poder"]):
                                 print("hue")
-                                break
                         else:
-                                        print("Você não pode fugir")
-                                        while player["vida"]>0 and inimigo["vida"]>0:
-                                                inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
-                                                player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
+                                print("Você não pode fugir")
+                                while player["vida"]>0 and inimigo["vida"]>0:
+                                        inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
+                                        player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
                                         if  inimigo["vida"]<=0 :
                                                 return VENCEU
                                         if player["vida"] <=0:
                                                 return PERDEU
-                if resposta == 2:
+                if resposta == "batalhar" or resposta == "2":
                                 while player["vida"]>0 and inimigo["vida"]>0:
                                         inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
                                         player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
