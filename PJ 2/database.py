@@ -25,7 +25,7 @@ database=[{
 },
 {'player': {
 'nome' : 'pikachu',
-'poder' : 35,
+'poder' : 10,
 'vida' : 150,
 'defesa' : 12 }
 }
