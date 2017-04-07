@@ -28,7 +28,7 @@ while True:
 		print("Vida = {0}".format(inimigo["vida"]))
 		print("Defesa = {0}".format(inimigo["defesa"]))
 		
-		batalha(player,inimigo)
+		
 
 		resultado = batalha(player,inimigo)
 		

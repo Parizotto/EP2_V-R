@@ -18,16 +18,16 @@ database=[{
 	"defesa" : 11
 },
 {
-	'nome' : 'Pidgey',
-	'poder' : 27,
-	'vida' : 200,
-	'defesa' : 13 
+	"nome" : "Pidgey",
+	"poder" : 27,
+	"vida" : 200,
+	"defesa": 13 
 },
-{'player': {
-'nome' : 'pikachu',
-'poder' : 10,
-'vida' : 150,
-'defesa' : 12 }
+{"player": {
+"nome" : "pikachu",
+"poder" : 10,
+"vida" : 150,
+"defesa" : 12 }
 }
 ]
 with open ('database.pickle','wb') as arquivo:
