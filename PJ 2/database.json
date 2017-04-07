@@ -27,7 +27,11 @@
 	],
 	"player" : {
 		"nome" : "pikachu",
+<<<<<<< HEAD
 		"poder" : 10,
+=======
+		"poder" : 23,
+>>>>>>> 73ae7e21a238a413edeb89c5299f4b97ef24d2b0
 		"vida" : 150,
 		"defesa" : 12
 	}

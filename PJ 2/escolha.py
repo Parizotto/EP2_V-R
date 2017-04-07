@@ -1,6 +1,10 @@
 PASSEAR = 0
 DORMIR = 1
+<<<<<<< HEAD
 import time, sys, json
+=======
+import time, sys, json 
+>>>>>>> 73ae7e21a238a413edeb89c5299f4b97ef24d2b0
 
 def escolha():
 
