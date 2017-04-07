@@ -1,6 +1,6 @@
 PASSEAR = 0
 DORMIR = 1
-import time, sys, json, 
+import time, sys, json
 
 def escolha():
 
@@ -13,7 +13,7 @@ def escolha():
 
 	while True:
 		hue = "vamos la.....\o/\n"
-		resposta = input("Você deseja:\n passear(1)?\n dormir(2)?\n ver o meu pokemom(3)?\n pokedex(4)\n")
+		resposta = input("Você deseja:\n\n 1 - passear?\n 2 - dormir?\n 3 - meu pokemom?\n 4 - pokedex\n\n")
 
 		if resposta == "passear" or resposta == "1":
 			for character in hue:
@@ -27,6 +27,7 @@ def escolha():
 			return DORMIR
 
 		if resposta == "ver o meu pokemom" or resposta == "3":
+			print("você encontrou um pokemom! \n")
 			print("Nome = {0}".format(player["nome"]))
 			print("Poder = {0}".format(player['poder']))
 			print("Vida = {0}".format(player["vida"]))

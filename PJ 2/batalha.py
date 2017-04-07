@@ -15,16 +15,20 @@ def batalha(player, inimigo):
 					player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
 					if inimigo["vida"]<=0:
 						return VENCEU
+						break
 					if player["vida"] <=0:
 						return PERDEU
+						break
 		if resposta == 2:
 			while player["vida"]>0 and inimigo["vida"]>0:
 				inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
 				player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
 			if inimigo["vida"]<=0 :
 				return VENCEU
+				break
 			if player["vida"] <=0:
 				return PERDEU
+				break
 
 
 	# 	resposta= int(input('você quer fugir(1) ou batalhar(2)'))
