@@ -12,22 +12,21 @@ def escolha():
 	player = dados["player"]
 
 	while True:
-		hue = "vamos la.....\o/\n"
-		resposta = input("Você deseja:\n\n 1 - passear\n 2 - dormir\n 3 - meu pokemom\n 4 - pokedex\n\n")
+		hue = "caminhando...\ncaminhando...\n"
+		resposta = input("Você deseja:\n\n 1 - passear\n 2 - dormir\n 3 - meu pokemon\n 4 - pokedex\n\n")
 
 		if resposta == "passear" or resposta == "1":
 			for character in hue:
 				sys.stdout.write(character)
 				sys.stdout.flush()
-				time.sleep(0.2)
+				time.sleep(0.1)
 			return PASSEAR
 
 		if resposta == "dormir" or resposta == "2":
 			print("okay")
 			return DORMIR
 
-		if resposta == "meu pokemom" or resposta == "3":
-			print("você encontrou um pokemom! \n")
+		if resposta == "meu pokemon" or resposta == "3":
 			print("Nome = {0}".format(player["nome"]))
 			print("Poder = {0}".format(player['poder']))
 			print("Vida = {0}".format(player["vida"]))
