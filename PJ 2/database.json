@@ -13,10 +13,34 @@
 			"defesa" : 10
 		},
 		{
+			"nome" : "kelvin",
+			"poder" : 17,
+			"vida" : 350,
+			"defesa" : 7
+		},
+		{
+			"nome" : "pedro",
+			"poder" : 20,
+			"vida" : 240,
+			"defesa" : 9
+		},
+		{
 			"nome" : "Bulbasaur",
-			"poder" : 15,
-			"vida" : 300,
+			"poder" : 22,
+			"vida" : 320,
 			"defesa" : 11
+		},
+		{
+			"nome" : "panda",
+			"poder" : 40,
+			"vida" : 360,
+			"defesa" : 20
+		},
+		{
+			"nome" : "batata",
+			"poder" : 9,
+			"vida" : 220,
+			"defesa" : 5
 		},
 		{
 			"nome" : "Pidgey",
