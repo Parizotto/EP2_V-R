@@ -72,25 +72,17 @@
 			"poder" : 40,
 			"vida" : 380,
 			"defesa" : 25
-		},
+		}
 
 
 		],
-			"player" : {
-			"nome" : "pikachu",
-			"poder" : 10,
-			"poder" : 23,
-			"vida" : 150,
-			"defesa" : 12
-		}
-<<<<<<< HEAD
-=======
-	],
+	
 	"player" : {
 		"nome" : "pikachu",
 		"poder" : 33,
 		"vida" : 150,
-		"defesa" : 12
+		"defesa" : 12,
+		"XP" : 0
 	}
->>>>>>> 54e70316f1f5982752d59afbbee1756b81ec86eb
+
 }

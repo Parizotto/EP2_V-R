@@ -2,6 +2,7 @@ PERDEU = 0
 VENCEU = 1
 import random
 import time, sys
+import json
 
 def batalha(player, inimigo):
 	with open("database.json") as arquivo:
