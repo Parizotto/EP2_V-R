@@ -2,49 +2,49 @@
 	"database": [
 		{
 			"nome" : "Squirtle",
-			"poder" : 20,
+			"poder" : 70,
 			"vida" : 200,
-			"defesa" : 12
+			"defesa" : 40
 		},
 		{
 			"nome" : "caterpie",
-			"poder" : 25,
+			"poder" : 66,
 			"vida" : 100,
-			"defesa" : 10
+			"defesa" : 50
 		},
 		{
 			"nome" : "kelvin",
-			"poder" : 17,
+			"poder" : 88,
 			"vida" : 350,
-			"defesa" : 7
+			"defesa" : 100
 		},
 		{
 			"nome" : "pedro",
-			"poder" : 20,
+			"poder" : 77,
 			"vida" : 240,
-			"defesa" : 9
+			"defesa" : 44
 		},
 		{
 			"nome" : "Bulbasaur",
-			"poder" : 22,
+			"poder" : 30,
 			"vida" : 320,
-			"defesa" : 11
+			"defesa" : 99
 		},
 		{
 			"nome" : "panda",
 			"poder" : 40,
 			"vida" : 360,
-			"defesa" : 20
+			"defesa" : 60
 		},
 		{
 			"nome" : "batata",
-			"poder" : 9,
+			"poder" : 20,
 			"vida" : 220,
 			"defesa" : 5
 		},
 		{
 			"nome" : "Pidgey",
-			"poder" : 27,
+			"poder" : 37,
 			"vida" : 200,
 			"defesa" : 13 
 		},
@@ -83,4 +83,14 @@
 			"vida" : 150,
 			"defesa" : 12
 		}
+<<<<<<< HEAD
+=======
+	],
+	"player" : {
+		"nome" : "pikachu",
+		"poder" : 33,
+		"vida" : 150,
+		"defesa" : 12
+	}
+>>>>>>> 54e70316f1f5982752d59afbbee1756b81ec86eb
 }
