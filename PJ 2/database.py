@@ -23,6 +23,32 @@ database=[{
 	"vida" : 200,
 	"defesa": 13 
 },
+{
+	"nome" : "kevin",
+	"poder" : 26,
+	"vida" : 350,
+	"defesa": 9 
+},
+
+{
+	"nome" : "Abc",
+	"poder" : 30,
+	"vida" : 50,
+	"defesa" : 18
+},
+{
+	"nome" : "Venossauro",
+	"poder" : 60,
+	"vida" : 500,
+	"defesa" : 40
+},
+{
+	"nome" : "Ivossauro",
+	"poder" : 40,
+	"vida" : 380,
+	"defesa" : 25
+},
+
 {"player": {
 "nome" : "pikachu",
 "poder" : 10,
