@@ -1,7 +1,13 @@
-PASSEAR = 0
-DORMIR = 1
 import time, sys, json
 
+<<<<<<< HEAD
+PASSEAR = 0
+DORMIR = 1
+MEU_POKEMON = 2
+POKEDEX = 3
+ 
+def escolha():
+=======
 def escolha(insperdex):
 
 	with open("database.json") as arquivo:
@@ -11,6 +17,7 @@ def escolha(insperdex):
 
 	player = dados["player"]
 
+>>>>>>> origin/master
 	while True:
 		hue = "caminhando...\ncaminhando...\n"
 		resposta = input("\nVocê deseja:\n\n 1 - passear\n 2 - dormir\n 3 - meu pokemon\n 4 - pokedex\n\n")
@@ -27,17 +34,17 @@ def escolha(insperdex):
 			return DORMIR
 
 		if resposta == "meu pokemon" or resposta == "3":
-			print("Nome = {0}".format(player["nome"]))
-			print("Poder = {0}".format(player['poder']))
-			print("Vida = {0}".format(player["vida"]))
-			print("Defesa = {0}".format(player["defesa"]))
-			break
+			return MEU_POKEMON
 
 		if resposta == "pokedex" or resposta == "4":
+<<<<<<< HEAD
+			return POKEDEX
+=======
 			print("\nvocê já avistou os pokemons:")
 			for ind in range(len(insperdex)):
 				print(insperdex[ind])
 
+>>>>>>> origin/master
 
 		else:
 			print("nao existe")
