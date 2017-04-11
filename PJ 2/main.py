@@ -14,9 +14,9 @@ with open("database.json") as arquivo:
 
 database = dados["database"]
 player = dados["player"]
-
+insperdex = []
 while True:
-	resposta = escolha()
+	resposta = escolha(insperdex)
 	encontrou = ("\nvocê encontrou um pokemon:\n\n")
 	win= ("\nseu pokemon ganhou! \o/\n")
 	lose= ("\nvocê perdeu :(\n")
@@ -35,8 +35,8 @@ while True:
 		print("Poder = {0}".format(inimigo['poder']))
 		print("Vida = {0}".format(inimigo["vida"]))
 		print("Defesa = {0}".format(inimigo["defesa"]))
-		
-		
+		if inimigo["nome"] not in insperdex:
+			insperdex.append(inimigo["nome"])
 
 		resultado = batalha(player,inimigo)
 		

@@ -2,7 +2,7 @@ PASSEAR = 0
 DORMIR = 1
 import time, sys, json
 
-def escolha():
+def escolha(insperdex):
 
 	with open("database.json") as arquivo:
 		dados = json.load(arquivo)
@@ -13,7 +13,7 @@ def escolha():
 
 	while True:
 		hue = "caminhando...\ncaminhando...\n"
-		resposta = input("Você deseja:\n\n 1 - passear\n 2 - dormir\n 3 - meu pokemon\n 4 - pokedex\n\n")
+		resposta = input("\nVocê deseja:\n\n 1 - passear\n 2 - dormir\n 3 - meu pokemon\n 4 - pokedex\n\n")
 
 		if resposta == "passear" or resposta == "1":
 			for character in hue:
@@ -34,7 +34,9 @@ def escolha():
 			break
 
 		if resposta == "pokedex" or resposta == "4":
-			pass
+			print("\nvocê já avistou os pokemons:")
+			for ind in range(len(insperdex)):
+				print(insperdex[ind])
 
 
 		else:
