@@ -1,13 +1,10 @@
 import time, sys, json
 
-<<<<<<< HEAD
 PASSEAR = 0
 DORMIR = 1
 MEU_POKEMON = 2
 POKEDEX = 3
- 
-def escolha():
-=======
+
 def escolha(insperdex):
 
 	with open("database.json") as arquivo:
@@ -37,8 +34,5 @@ def escolha(insperdex):
 
 		if resposta == "pokedex" or resposta == "4":
 			return POKEDEX
-			print("\nvocê já avistou os pokemons:")
-			for ind in range(len(insperdex)):
-				print(insperdex[ind])
 		else:
 			print("nao existe")
