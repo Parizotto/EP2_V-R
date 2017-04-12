@@ -36,6 +36,7 @@ def batalha(player, inimigo):
 					while player["vida"]>0 and inimigo["vida"]>0:
 						inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
 						player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
+						print("a vida do seu pokemon: {0}".format(player["vida"]))
 						if inimigo["vida"]<=0:
 							return VENCEU
 							break
@@ -44,7 +45,7 @@ def batalha(player, inimigo):
 							break
 			if (player["poder"]) <= (inimigo["poder"]):
 				run_slow = fugir_lento[random.randrange(len(fugir_lento))]
-				if run_slow == 3 or run_slow ==8 or run_slow == 5:
+				if run_slow == 3 or run_slow == 8 or run_slow == 5:
 					for character in conseguiu:
 						sys.stdout.write(character)
 						sys.stdout.flush()
@@ -58,6 +59,7 @@ def batalha(player, inimigo):
 					while player["vida"]>0 and inimigo["vida"]>0:
 						inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
 						player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
+						print("a vida do seu pokemon: {0}".format(player["vida"]))
 						if inimigo["vida"]<=0:
 							return VENCEU
 							break
