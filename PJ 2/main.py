@@ -4,6 +4,10 @@ import time, sys
 
 from escolha import *
 from batalha import batalha, PERDEU, VENCEU
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9232a9443f938df7b9dadcf76271a90cfea348d
 
 def escolher (database):
 	inimigo = database[random.randrange(len(database))]
@@ -16,8 +20,11 @@ database = dados["database"]
 player = dados["player"]
 insperdex = []
 while True:
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f9232a9443f938df7b9dadcf76271a90cfea348d
 	resposta = escolha(insperdex)
 
 	encontrou = ("\nvocê encontrou um pokemon:\n\n")
@@ -38,7 +45,14 @@ while True:
 		print("Poder = {0}".format(inimigo['poder']))
 		print("Vida = {0}".format(inimigo["vida"]))
 		print("Defesa = {0}".format(inimigo["defesa"]))
+<<<<<<< HEAD
 		print("XP do seu pokemon = {0}".format(player["XP"]))
+=======
+
+
+		print("XP do seu pokemon = {0}".format(player["XP"]))
+
+>>>>>>> f9232a9443f938df7b9dadcf76271a90cfea348d
 		if inimigo["nome"] not in insperdex:
 			insperdex.append(inimigo["nome"])
 
@@ -74,4 +88,8 @@ while True:
 		print("\nvocê já avistou os pokemons:")
 		for ind in range(len(insperdex)):
 			print(insperdex[ind])
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9232a9443f938df7b9dadcf76271a90cfea348d
 
