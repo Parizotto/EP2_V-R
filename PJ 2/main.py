@@ -4,7 +4,6 @@ import time, sys
 
 from escolha import *
 from batalha import batalha, PERDEU, VENCEU
-from evolucao import evolucao
 
 def escolher (database):
 	inimigo = database[random.randrange(len(database))]
@@ -18,9 +17,6 @@ player = dados["player"]
 insperdex = []
 while True:
 
-	
-	resposta = escolha()
-
 
 	resposta = escolha(insperdex)
 
@@ -30,7 +26,7 @@ while True:
 	if resposta == DORMIR:
 		break
 	elif resposta == PASSEAR:
-		
+		# Vai rolar batalha.
 		inimigo = escolher(database)
 
 		for character in encontrou:
@@ -42,17 +38,9 @@ while True:
 		print("Poder = {0}".format(inimigo['poder']))
 		print("Vida = {0}".format(inimigo["vida"]))
 		print("Defesa = {0}".format(inimigo["defesa"]))
-
-
 		print("XP do seu pokemon = {0}".format(player["XP"]))
-		
-
-
-		print("XP do seu pokemon = {0}".format(player["XP"]))
-
 		if inimigo["nome"] not in insperdex:
 			insperdex.append(inimigo["nome"])
-
 
 		resultado = batalha(player,inimigo)
 		
@@ -83,11 +71,7 @@ while True:
 		print("Defesa = {0}".format(player["defesa"]))
 
 	elif resposta == POKEDEX:
-
-		print("Em construção...")
-
 		print("\nvocê já avistou os pokemons:")
 		for ind in range(len(insperdex)):
 			print(insperdex[ind])
-
 
