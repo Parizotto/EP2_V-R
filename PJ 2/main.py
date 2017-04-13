@@ -18,11 +18,9 @@ player = dados["player"]
 insperdex = []
 while True:
 
-<<<<<<< HEAD
 	
 	resposta = escolha()
-=======
->>>>>>> ec45817c7c3837bc0acee08728d9500082e80602
+
 
 	resposta = escolha(insperdex)
 
@@ -44,14 +42,14 @@ while True:
 		print("Poder = {0}".format(inimigo['poder']))
 		print("Vida = {0}".format(inimigo["vida"]))
 		print("Defesa = {0}".format(inimigo["defesa"]))
-<<<<<<< HEAD
+
 
 		print("XP do seu pokemon = {0}".format(player["XP"]))
 		
 
-=======
+
 		print("XP do seu pokemon = {0}".format(player["XP"]))
->>>>>>> ec45817c7c3837bc0acee08728d9500082e80602
+
 		if inimigo["nome"] not in insperdex:
 			insperdex.append(inimigo["nome"])
 
@@ -85,11 +83,11 @@ while True:
 		print("Defesa = {0}".format(player["defesa"]))
 
 	elif resposta == POKEDEX:
-<<<<<<< HEAD
+
 		print("Em construção...")
-=======
+
 		print("\nvocê já avistou os pokemons:")
 		for ind in range(len(insperdex)):
 			print(insperdex[ind])
->>>>>>> ec45817c7c3837bc0acee08728d9500082e80602
+
 
