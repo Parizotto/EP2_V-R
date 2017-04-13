@@ -3,11 +3,9 @@ VENCEU = 1
 import random
 import time, sys
 import json
-
 def batalha(player, inimigo):
 	with open("database.json") as arquivo:
 		dados = json.load(arquivo)
-
 	fugir_lento = [1,2,3,4,5,6,7,8,9,10]
 	fugir_rapido = [1,2,3,4,5]
 	run= ("Fugiu")
@@ -87,23 +85,3 @@ def batalha(player, inimigo):
 				break
 		else:
 			print("nao existe")
-
-
-	# 	resposta= int(input('você quer fugir(1) ou batalhar(2)'))
-	# 	if resposta == 1:
-	#              if (inimigo['poder']) >= (player['poder']):
-	#                       print("Você não pode fugir")
-	# 	       continue
-	# 	if resposta == 2:
-	#               while player["vida"]>0 and inimigo["vida"]>0:
-	#	                inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
-	#	                player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
-	#               if  inimigo["vida"]<=0 :
-	#	                return VENCEU
-	#               if player["vida"] <=0:
-	#	                return PERDEU
-	# 		
-	# 	
-	# 	else:
-	# 		print('nao existe essa opção')
-	# 		continue
