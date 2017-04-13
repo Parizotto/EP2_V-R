@@ -32,7 +32,7 @@ def batalha(player, inimigo):
 					for character in nao_conseguiu:
 						sys.stdout.write(character)
 						sys.stdout.flush()
-						time.sleep(0.2)
+						time.sleep(0.1)
 					while player["vida"]>0 and inimigo["vida"]>0:
 						inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
 						player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
