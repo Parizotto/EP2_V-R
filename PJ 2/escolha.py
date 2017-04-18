@@ -1,19 +1,12 @@
 
 import time, sys, json
 
-<<<<<<< HEAD
 
-=======
->>>>>>> f9232a9443f938df7b9dadcf76271a90cfea348d
+
 PASSEAR = 0
 DORMIR = 1
 MEU_POKEMON = 2
 POKEDEX = 3
-<<<<<<< HEAD
- 
-def escolha():
-=======
->>>>>>> f9232a9443f938df7b9dadcf76271a90cfea348d
 
 def escolha(insperdex):
 
@@ -50,14 +43,6 @@ def escolha(insperdex):
 			print("\nvocê já avistou os pokemons:")
 			for ind in range(len(insperdex)):
 				print(insperdex[ind])
-<<<<<<< HEAD
-
-
-
-		else:
-			print("nao existe")
-=======
 		else:
 			print("nao existe")
 
->>>>>>> f9232a9443f938df7b9dadcf76271a90cfea348d
