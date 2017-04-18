@@ -16,6 +16,7 @@ while True:
 	encontrou = ("\nvocê encontrou um pokemon:\n\n")
 	win= ("\nseu pokemon ganhou! \o/\n")
 	lose= ("\nvocê perdeu :(\n")
+	evoluir= ("\nseu pokemon evoluiu  \o/")
 	if resposta == DORMIR:
 		break
 	elif resposta == PASSEAR:
@@ -45,6 +46,10 @@ while True:
 				sys.stdout.flush()
 				time.sleep(0.1)
 		if player["XP"] >=10 :
+			for character in evoluir:
+				sys.stdout.write(character)
+				sys.stdout.flush()
+				time.sleep(0.1)
 			player["nome"]="raiochu"
 			player["poder"]=53
 			player["vida"]=190
@@ -54,6 +59,7 @@ while True:
 		print("Poder = {0}".format(player['poder']))
 		print("Vida = {0}".format(player["vida"]))
 		print("Defesa = {0}".format(player["defesa"]))
+		print("XP do seu pokemon = {0}".format(player["XP"]))
 	elif resposta == POKEDEX:
 		print("\nvocê já avistou os pokemons:")
 		for ind in range(len(insperdex)):
