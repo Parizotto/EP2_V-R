@@ -17,8 +17,8 @@ def batalha(player, inimigo):
 		nao_conseguiu =("\nNão conseguiu fugir\nBatalhando em:\n3\n2\n1\n")
 		batalhando= ("batalhando em:")
 		numeros =("\n3\n2\n1\n")
-		if resposta == "1": #se quiser fugir ele vai rodar as opçoes
-			if (player["poder"]) >= (inimigo["poder"]): #chance alta de fugir
+		if resposta == "1":
+			if (player["poder"]) >= (inimigo["poder"]):
 				run_fast = fugir_rapido[random.randrange(len(fugir_rapido))]
 				if run_fast == 1 or run_fast == 3 or run_fast == 5:
 					for character in conseguiu:

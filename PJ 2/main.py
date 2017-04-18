@@ -11,6 +11,7 @@ with open("database.json") as arquivo:
 database = dados["database"]
 player = dados["player"]
 insperdex = []
+ja_evoluiu = False
 while True:
 	resposta = escolha(insperdex)
 	encontrou = ("\nvocê encontrou um pokemon:\n\n")
@@ -45,15 +46,16 @@ while True:
 				sys.stdout.write(character)
 				sys.stdout.flush()
 				time.sleep(0.1)
-		if player["XP"] >=10 :
+		if player["XP"] >=30 and not ja_evoluiu:
 			for character in evoluir:
 				sys.stdout.write(character)
 				sys.stdout.flush()
 				time.sleep(0.1)
-			player["nome"]="raiochu"
+			player["nome"]="raichu"
 			player["poder"]=53
 			player["vida"]=190
 			player["defesa"]=24
+			ja_evoluiu = True
 	elif resposta == MEU_POKEMON:
 		print("Nome = {0}".format(player["nome"]))
 		print("Poder = {0}".format(player['poder']))
