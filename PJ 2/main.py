@@ -67,4 +67,3 @@ while True:
 		for ind in range(len(insperdex)):
 			print(insperdex[ind])
 
-
