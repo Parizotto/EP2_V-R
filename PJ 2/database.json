@@ -13,16 +13,16 @@
 			"defesa" : 50
 		},
 		{
-			"nome" : "kelvin",
+			"nome" : "rattata",
 			"poder" : 88,
-			"vida" : 350,
+			"vida" : 215,
 			"defesa" : 100
 		},
 		{
-			"nome" : "pedro",
+			"nome" : "ekans",
 			"poder" : 77,
 			"vida" : 240,
-			"defesa" : 44
+			"defesa" : 78
 		},
 		{
 			"nome" : "Bulbasaur",
@@ -31,16 +31,16 @@
 			"defesa" : 99
 		},
 		{
-			"nome" : "panda",
+			"nome" : "nidoran",
 			"poder" : 40,
 			"vida" : 360,
 			"defesa" : 60
 		},
 		{
-			"nome" : "batata",
+			"nome" : "clefairy",
 			"poder" : 20,
 			"vida" : 220,
-			"defesa" : 5
+			"defesa" : 122
 		},
 		{
 			"nome" : "Pidgey",
@@ -49,28 +49,28 @@
 			"defesa" : 13 
 		},
 		{
-			"nome" : "kevin",
-			"poder" : 26,
-			"vida" : 350,
+			"nome" : "zubat",
+			"poder" : 18,
+			"vida" : 220,
 			"defesa": 9 
 		},
 
 		{
-			"nome" : "Abc",
+			"nome" : "meowth",
 			"poder" : 30,
 			"vida" : 50,
 			"defesa" : 18
 		},
 		{
-			"nome" : "Venossauro",
+			"nome" : "abra",
 			"poder" : 60,
-			"vida" : 500,
-			"defesa" : 40
+			"vida" : 220,
+			"defesa" : 25
 		},
 		{
-			"nome" : "Ivossauro",
+			"nome" : "ponyta",
 			"poder" : 40,
-			"vida" : 380,
+			"vida" : 320,
 			"defesa" : 25
 		}
 
@@ -79,9 +79,9 @@
 	
 	"player" : {
 		"nome" : "pikachu",
-		"poder" : 33,
+		"poder" : 44,
 		"vida" : 150,
-		"defesa" : 12,
+		"defesa" : 20,
 		"XP" : 0
 	}
 
