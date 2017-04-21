@@ -1,4 +1,4 @@
-import json
+from json import *
 import random
 import time, sys
 from escolha import *
@@ -46,11 +46,11 @@ while True:
 				sys.stdout.write(character)
 				sys.stdout.flush()
 				time.sleep(0.1)
-		if player["XP"] >=30 and not ja_evoluiu:
+		if player["XP"] >=5 and not ja_evoluiu:
 			for character in evoluir:
 				sys.stdout.write(character)
 				sys.stdout.flush()
-				time.sleep(0.1)
+				time.sleep(0.2)
 			player["nome"]="raichu"
 			player["poder"]=53
 			player["vida"]=190
@@ -61,9 +61,19 @@ while True:
 		print("Poder = {0}".format(player['poder']))
 		print("Vida = {0}".format(player["vida"]))
 		print("Defesa = {0}".format(player["defesa"]))
-		print("XP do seu pokemon = {0}".format(player["XP"]))
+		print("XP = {0}".format(player["XP"]))
 	elif resposta == POKEDEX:
 		print("\nvocê já avistou os pokemons:")
 		for ind in range(len(insperdex)):
 			print(insperdex[ind])
+	elif resposta == CARREGAR:
+		with open("insperdex_salvo.json","r") as file:
+			insperdex = json.load(file)
+		with open("evolucao_salvo.json","r") as hue:
+			player = json.load(hue)
 
+
+with open("insperdex_salvo.json","w") as file:
+	json.dump(insperdex, file)
+with open("evolucao_salvo.json","w") as hue:
+	json.dump(player, hue)
