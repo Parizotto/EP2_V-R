@@ -11,7 +11,7 @@ def escolha(insperdex):
 	player = dados["player"]
 	while True:
 		hue = "caminhando...\ncaminhando...\n"
-		resposta = input("\nVocê deseja:\n\n 1 - passear\n 2 - dormir\n 3 - meu pokemon\n 4 - pokedex\n 5 - carregar jogo\n\n")
+		resposta = input("\nVocê deseja:\n\n 1 - passear\n 2 - dormir\n 3 - meu pokemon\n 4 - pokedex\n 5 - carregar jogo anterior\n\n")
 		if resposta == "passear" or resposta == "1":
 			for character in hue:
 				sys.stdout.write(character)

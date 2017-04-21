@@ -71,8 +71,6 @@ while True:
 			insperdex = json.load(file)
 		with open("evolucao_salvo.json","r") as hue:
 			player = json.load(hue)
-
-
 with open("insperdex_salvo.json","w") as file:
 	json.dump(insperdex, file)
 with open("evolucao_salvo.json","w") as hue:

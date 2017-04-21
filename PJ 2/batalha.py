@@ -55,6 +55,7 @@ def batalha(player, inimigo):
 						sys.stdout.flush()
 						time.sleep(0.1)
 					while player["vida"]>0 and inimigo["vida"]>0:
+						x=random.uniform(0.5,1.0)
 						inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
 						player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
 						print("a vida do seu pokemon: {0}".format(player["vida"]))
@@ -72,7 +73,7 @@ def batalha(player, inimigo):
 			for character in numeros:
 				sys.stdout.write(character)
 				sys.stdout.flush()
-				time.sleep(0.2)
+				time.sleep(0.2) 
 			while player["vida"]>0 and inimigo["vida"]>0:
 				inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
 				player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
