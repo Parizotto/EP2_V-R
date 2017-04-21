@@ -9,57 +9,57 @@
 		},
 		{
 			"nome" : "caterpie",
-			"poder" : 21,
+			"poder" : 19,
 			"vida" : 90,
-			"defesa" : 18,
+			"defesa" : 10,
 			"tipo" : "planta"
 		},
 		{
 			"nome" : "rattata",
-			"poder" : 22,
+			"poder" : 16,
 			"vida" : 100,
-			"defesa" : 18,
+			"defesa" : 14,
 			"tipo" : "normal"
 		},
 		{
 			"nome" : "ekans",
-			"poder" : 55,
-			"vida" : 180,
-			"defesa" : 50,
+			"poder" : 14,
+			"vida" : 80,
+			"defesa" : 16,
 			"tipo" : "normal"
 		},
 		{
 			"nome" : "Bulbasaur",
-			"poder" : 30,
+			"poder" : 22,
 			"vida" : 114,
-			"defesa" : 20,
+			"defesa" : 12,
 			"tipo" : "planta"
 		},
 		{
 			"nome" : "nidoran",
-			"poder" : 40,
-			"vida" : 150,
-			"defesa" : 60,
+			"poder" : 28,
+			"vida" : 92,
+			"defesa" : 14,
 			"tipo" : "normal"
 		},
 		{
 			"nome" : "clefairy",
-			"poder" : 45,
-			"vida" : 117,
-			"defesa" : 45,
+			"poder" : 14,
+			"vida" : 80,
+			"defesa" : 12,
 			"tipo" : "normal"
 		},
 		{
 			"nome" : "Pidgey",
 			"poder" : 37,
-			"vida" : 200,
+			"vida" : 75,
 			"defesa" : 13,
 			"tipo" : "normal" 
 		},
 		{
 			"nome" : "zubat",
 			"poder" : 18,
-			"vida" : 220,
+			"vida" : 75,
 			"defesa": 12,
 			"tipo" : "normal"
 		},
@@ -68,99 +68,99 @@
 			"nome" : "meowth",
 			"poder" : 30,
 			"vida" : 120,
-			"defesa" : 18,
+			"defesa" : 7,
 			"tipo" : "normal"
 		},
 		{
 			"nome" : "abra",
-			"poder" : 37,
-			"vida" : 135,
-			"defesa" : 22,
+			"poder" : 30,
+			"vida" : 80,
+			"defesa" : 9,
 			"tipo" : "normal"
 		},
 		{
 			"nome" : "ponyta",
-			"poder" : 40,
+			"poder" : 20,
 			"vida" : 110,
-			"defesa" : 25,
+			"defesa" : 11,
 			"tipo" : "fogo"
 		},
 		{ 		
 			"nome" : "xarmander",
 			"poder" : 28,
-			"vida" : 110,
-			"defesa" : 19,
+			"vida" : 100,
+			"defesa" : 8,
 			"tipo" : "fogo"
 
 		},
 		{
 			"nome" : "charmelon",
-			"poder" : 60,
-			"vida" : 150,
-			"defesa" : 24,
+			"poder" : 35,
+			"vida" : 123,
+			"defesa" : 17,
 			"tipo" : "fogo"
 		},
 		{
 			"nome" : "xalizard",
-			"poder" : 80,
-			"vida" : 170,
-			"defesa" : 40,
+			"poder" : 47,
+			"vida" : 130,
+			"defesa" : 20,
 			"tipo" : "fogo"
 		},
 		{
 			"nome" : "blastoise",
-			"poder" : 67,
-			"vida" : 185,
-			"defesa" : 39,
+			"poder" : 43,
+			"vida" : 145,
+			"defesa" : 22,
 			"tipo" : "agua"
 		},
 		{
 			"nome" : "varturtle",
-			"poder" : 46,
-			"vida" : 140,
-			"defesa" : 28,
+			"poder" : 32,
+			"vida" : 128,
+			"defesa" : 18,
 			"tipo" : "agua"
 		},
 		{
 			"nome" : "netapod",
 			"poder" : 26,
 			"vida" : 125,
-			"defesa" : 20,
+			"defesa" : 12,
 			"tipo" : "planta"
 		},
 		{
 			"nome" : "butterfre",
-			"poder" : 40,
-			"vida" : 140,
-			"defesa" : 23,
+			"poder" : 32,
+			"vida" : 125,
+			"defesa" : 16,
 			"tipo" : "planta"
 		},
 		{
 			"nome" : "raticat",
 			"poder" : 32,
 			"vida" : 115,
-			"defesa" : 30,
+			"defesa" : 15,
 			"tipo" : "normal"
 		},
 		{
 			"nome" : "sperouw",
 			"poder" : 23,
 			"vida" : 105,
-			"defesa" : 20,
+			"defesa" : 8,
 			"tipo" : "normal"
 		},
 		{
 			"nome" : "fearouw",
-			"poder" : 45,
+			"poder" : 36,
 			"vida" : 130,
-			"defesa" : 27,
+			"defesa" : 15,
 			"tipo" : "normal"
 		},
 		{
 			"nome" : "Arbook",
-			"poder" : 42,
+			"poder" : 38,
 			"vida" : 120,
-			"defesa" : 35,
+			"defesa" : 13,
 			"tipo" : "normal"
 		}
 		
@@ -170,9 +170,9 @@
 	
 	"player" : {
 		"nome" : "pikachu",
-		"poder" : 22,
-		"vida" : 150,
-		"defesa" : 18,
+		"poder" : 28,
+		"vida" : 95,
+		"defesa" : 10,
 		"tipo" : "fogo",
 		"XP" : 0
 	}
