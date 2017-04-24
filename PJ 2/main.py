@@ -19,7 +19,6 @@ while True:
 	win= ("\nseu pokemon ganhou! \o/\n")
 	lose= ("\nvocê perdeu :(\n")
 	evoluir= ("\nseu pokemon evoluiu  \o/\n")
-
 	if resposta == DORMIR:
 		break
 	#Caso escolha passear, o player podera ver o nome mais seus atributos do inpermon inimigo
@@ -34,18 +33,14 @@ while True:
 		print("Poder  = {0}".format(inimigo['poder']))
 		print("Vida   = {0}".format(inimigo["vida"]))
 		print("Defesa = {0}".format(inimigo["defesa"]))
-<<<<<<< HEAD
 		print("\n\n VS\n\n")
 		print("     PLAYER")
 		print("Nome   = {0}".format(player["nome"]))
 		print("Poder  = {0}".format(player['poder']))
 		print("Vida   = {0}".format(player["vida"]))
 		print("Defesa = {0}".format(player["defesa"]))
-
 		print("XP     = {0}".format(player["XP"]))
-=======
 		#If para checar se o inspermon ja esta em nosso pokedex
->>>>>>> ed2702e6f93bdaefaece29a3d55c8ba5db1f381c
 		if inimigo["nome"] not in insperdex:
 			insperdex.append(inimigo["nome"])
 		resultado = batalha(player,inimigo)
@@ -63,7 +58,7 @@ while True:
 				sys.stdout.flush()
 				time.sleep(0.1)
 		# If para comparar o atual XP com o minimo necessario para evoluir
-		if player["XP"] >=20 and not ja_evoluiu:
+		if player["XP"] >=15 and not ja_evoluiu:
 			for character in evoluir:
 				sys.stdout.write(character)
 				sys.stdout.flush()
@@ -96,7 +91,11 @@ while True:
 			insperdex = json.load(file)
 		with open("evolucao_salvo.json","r") as hue:
 			player = json.load(hue)
+		with open("palavra_evolucao.json","r") as yei:
+			ja_evoluiu = json.load(yei)
 with open("insperdex_salvo.json","w") as file:
 	json.dump(insperdex, file)
 with open("evolucao_salvo.json","w") as hue:
 	json.dump(player, hue)
+with open("palavra_evolucao.json","w") as yei:
+	json.dump("True",yei)

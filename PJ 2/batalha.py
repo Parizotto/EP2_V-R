@@ -39,6 +39,7 @@ def batalha(player, inimigo):
 					#Se não conseguir fugir, a batalha será iniciada
 					while player["vida"]>0 and inimigo["vida"]>0:
 						#Inicio da aleatoridade das batalhas,utilizando intervalos de tempo relacionados a ganho ou perda de poder
+						#função 6 junto com a aletoriedade da batalha!!!
 						if inimigo["tipo"] == "normal":
 							n=random.randint(1,12)
 							if n<=3:
@@ -72,17 +73,25 @@ def batalha(player, inimigo):
 								player["defesa"]-=2
 
 						inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
-						player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
-<<<<<<< HEAD
-=======
-						print("a vida do seu pokemon: {0}".format(player["vida"]))
-
->>>>>>> ed2702e6f93bdaefaece29a3d55c8ba5db1f381c
 						if inimigo["vida"]<=0:
 							return VENCEU
 							break
+						player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
+
+						print("a vida do seu pokemon: {0}".format(player["vida"]))
+
+						if inimigo["vida"]<=0:
+							return VENCEU
+							#estamos carregando outra vez o database por um motivo: se caisse o mesmo inimigo, a vida dele ficaria negativa na proxima batalha. 
+							with open("database.json") as arquivo:
+								dados = json.load(arquivo)
+								database = dados["database"]
+							break
 						if player["vida"] <=0:
 							return PERDEU
+							with open("database.json") as arquivo:
+								dados = json.load(arquivo)
+								database = dados["database"]
 							break
 			if (player["poder"]) <= (inimigo["poder"]):
 				run_slow = fugir_lento[random.randrange(len(fugir_lento))]
@@ -132,17 +141,24 @@ def batalha(player, inimigo):
 								player["defesa"]-=2		
 
 						inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
-						player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
-<<<<<<< HEAD
-=======
-						print("a vida do seu pokemon: {0}".format(player["vida"]))
-
->>>>>>> ed2702e6f93bdaefaece29a3d55c8ba5db1f381c
 						if inimigo["vida"]<=0:
 							return VENCEU
 							break
+						player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
+
+						print("a vida do seu pokemon: {0}".format(player["vida"]))
+
+						if inimigo["vida"]<=0:
+							return VENCEU
+							with open("database.json") as arquivo:
+								dados = json.load(arquivo)
+								database = dados["database"]
+							break
 						if player["vida"] <=0:
 							return PERDEU
+							with open("database.json") as arquivo:
+								dados = json.load(arquivo)
+								database = dados["database"]
 							break
 		if resposta == "2":
 			for character in batalhando:
@@ -189,18 +205,25 @@ def batalha(player, inimigo):
 						player["defesa"]-=2
 				# Equaçoes para ocorrer as batalhas e obter um resultado
 				inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
+				if inimigo["vida"]<=0:
+					return VENCEU
+					break
 				player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
-<<<<<<< HEAD
-=======
+
 				print("a vida do seu pokemon: {0}".format(player["vida"]))
 				print ("poder: {0}".format(player["poder"]))
 
->>>>>>> ed2702e6f93bdaefaece29a3d55c8ba5db1f381c
 			if inimigo["vida"]<=0 :
 				return VENCEU
+				with open("database.json") as arquivo:
+					dados = json.load(arquivo)
+					database = dados["database"]
 				break
 			if player["vida"] <=0:
 				return PERDEU
+				with open("database.json") as arquivo:
+					dados = json.load(arquivo)
+					database = dados["database"]
 				break
 		else:
 			print("nao existe")
