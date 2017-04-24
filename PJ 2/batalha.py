@@ -34,7 +34,6 @@ def batalha(player, inimigo):
 					while player["vida"]>0 and inimigo["vida"]>0:
 						inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
 						player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
-						print("a vida do seu pokemon: {0}".format(player["vida"]))
 						if inimigo["vida"]<=0:
 							return VENCEU
 							break
@@ -58,7 +57,6 @@ def batalha(player, inimigo):
 						x=random.uniform(0.5,1.0)
 						inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
 						player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
-						print("a vida do seu pokemon: {0}".format(player["vida"]))
 						if inimigo["vida"]<=0:
 							return VENCEU
 							break
@@ -77,7 +75,6 @@ def batalha(player, inimigo):
 			while player["vida"]>0 and inimigo["vida"]>0:
 				inimigo["vida"] = inimigo["vida"] + ( inimigo["defesa"] -player["poder"])
 				player["vida"] = player["vida"] + (player["defesa"]-inimigo["poder"] )
-				print("a vida do seu pokemon: {0}".format(player["vida"]))
 			if inimigo["vida"]<=0 :
 				return VENCEU
 				break

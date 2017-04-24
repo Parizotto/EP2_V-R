@@ -9,8 +9,14 @@ def escolha(insperdex):
 		dados = json.load(arquivo)
 	database = dados["database"]
 	player = dados["player"]
+	introducao = False
 	while True:
-		hue = "caminhando...\ncaminhando...\n"
+		if introducao:
+			print("\n\nbem vindo jogador")
+			print("Aproveite o jogo e as sua possibilidades...")
+			print("Se você já possui um jogo salvo, é possível continua-lo. Se não, ignore o quinto item")
+			introducao = True
+		hue = "\ncaminhando...\ncaminhando...\n"
 		resposta = input("\nVocê deseja:\n\n 1 - passear\n 2 - dormir\n 3 - meu pokemon\n 4 - pokedex\n 5 - carregar jogo anterior\n\n")
 		if resposta == "passear" or resposta == "1":
 			for character in hue:
